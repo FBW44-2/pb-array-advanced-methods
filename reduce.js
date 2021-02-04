@@ -5,14 +5,40 @@ const prices = [2, 4, 6, 8, 10, 12];
 // use the result in the next iteration
 
 const sum = prices.reduce((acc, currentValue) => {
-    console.log(acc, currentValue);
-
     return acc + currentValue;
 });
 
+
+function reduceLookAlike(arr, callbackFunc, initialAcc) {
+    let acc;
+
+    if (initialAcc) {
+        acc = initialAcc;
+    } else {
+        acc = arr[0];
+    }
+
+    let initialIndex = initialAcc ? 0 : 1;
+
+    for (let i = initialIndex; i < arr.length; i++) {
+        const item = arr[i];
+
+        acc = callbackFunc(acc, item);
+    }
+
+    return acc;
+}
+
+let reduceLookAlikeSum = reduceLookAlike(prices, (acc, currentValue) => {
+    console.log(acc, currentValue, '#########################');
+
+    return acc + currentValue;
+});
+console.log(reduceLookAlikeSum, '42 ######');
 console.log(sum); // undefined
 
 function getBudgets(arr) {
+
     return arr.reduce((acc, currentValue) => {
         console.log(acc, currentValue);
 
