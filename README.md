@@ -4,19 +4,19 @@ Arrays have some nice built-in methods:
 
 ## forEach
 
-    the `forEach` method is syntactic sugar for the for loop. It also does not modify the original array, but it does **not** return any value back.
+the `forEach` method is syntactic sugar for the for loop. It also does not modify the original array, but it does **not** return any value back.
 
 ## map
 
-    We can use `map` to transform each item in an array. The `map` method will return us a new array (without modifying the original array).
+We can use `map` to transform each item in an array. The `map` method will return us a new array (without modifying the original array).
 
 ## filter
 
-    The filter method cleans up the array, we can remove certain items easily. It will also return an array and it does not modify the original array.
+The filter method cleans up the array, we can remove certain items easily. It will also return an array and it does not modify the original array.
 
 ## reduce
 
-    The reduce method iterates over each item in an array and returns one value - an accumulation from all the iterations. This one value can be of different types: it can be a number, a string, an object.
+The reduce method iterates over each item in an array and returns one value - an accumulation from all the iterations. This one value can be of different types: it can be a number, a string, an object.
 
 ## Docs
 
